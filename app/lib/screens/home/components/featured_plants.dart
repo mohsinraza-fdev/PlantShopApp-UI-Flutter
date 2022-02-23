@@ -14,7 +14,7 @@ class FeaturedPlantList extends StatelessWidget {
       child: Row(
         children: <Widget>[
           FeaturePlantCard(image: "assets/images/plant1.jpg.png", press: () {}),
-          FeaturePlantCard(image: "assets/images/plant1.jpg.png", press: () {}),
+          FeaturePlantCard(image: "assets/images/plant2.jpg", press: () {}),
           FeaturePlantCard(image: "assets/images/plant1.jpg.png", press: () {}),
           FeaturePlantCard(image: "assets/images/plant1.jpg.png", press: () {}),
           FeaturePlantCard(image: "assets/images/plant1.jpg.png", press: () {}),
@@ -29,7 +29,9 @@ class FeaturedPlantList extends StatelessWidget {
 
 class FeaturePlantCard extends StatelessWidget {
   const FeaturePlantCard({
-    Key? key, required this.image, this.press,
+    Key? key,
+    required this.image,
+    this.press,
   }) : super(key: key);
 
   final String image;
@@ -49,9 +51,7 @@ class FeaturePlantCard extends StatelessWidget {
         height: 180,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(
-              image: AssetImage(image),
-              fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
         ),
       ),
     );

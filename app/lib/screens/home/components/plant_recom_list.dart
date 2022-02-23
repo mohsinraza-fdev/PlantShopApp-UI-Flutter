@@ -20,48 +20,56 @@ class PlantRecomList extends StatelessWidget {
             title: "Plant 1",
             country: "Pakistan",
             price: 400,
-            press: () {Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailsScreen(),
-              ),
-            );},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(),
+                ),
+              );
+            },
+          ),
+          PlantCard(
+            image: "assets/images/plant2.jpg",
+            title: "Plant 1",
+            country: "Pakistan",
+            price: 400,
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(),
+                ),
+              );
+            },
           ),
           PlantCard(
             image: "assets/images/plant1.jpg.png",
             title: "Plant 1",
             country: "Pakistan",
             price: 400,
-            press: () {Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailsScreen(),
-              ),
-            );},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(),
+                ),
+              );
+            },
           ),
           PlantCard(
             image: "assets/images/plant1.jpg.png",
             title: "Plant 1",
             country: "Pakistan",
             price: 400,
-            press: () {Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailsScreen(),
-              ),
-            );},
-          ),
-          PlantCard(
-            image: "assets/images/plant1.jpg.png",
-            title: "Plant 1",
-            country: "Pakistan",
-            price: 400,
-            press: () {Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailsScreen(),
-              ),
-            );},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(),
+                ),
+              );
+            },
           ),
           SizedBox(
             width: 20,
